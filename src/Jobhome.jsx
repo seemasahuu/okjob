@@ -7,6 +7,7 @@ import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { database } from "./firebase.config";
 import { collection, doc, onSnapshot, orderBy } from "firebase/firestore";
 import { query } from "firebase/database";
+import moment from "moment";
 
 const Jobhome = () => {
   const [loading, setLoading] = useState(true);
@@ -90,7 +91,9 @@ const Jobhome = () => {
                                   <MdOutlineWatchLater />
                                 </div>
 
-                                <h1>11 hours ago</h1>
+                                <h1>
+                                  {moment(_job.createdAt).add(3, 'days').calendar() }
+                                </h1>
                               </div>
 
                               <div className="flex items-center">

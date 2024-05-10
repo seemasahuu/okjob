@@ -36,7 +36,7 @@ const Form = () => {
       number: inputData.number,
       jobtitle: inputData.jobTitle,
       jobId:id,
-      createdAt:new Date()
+      createdAt:(new Date()).toISOString()
     };
 
     if (!inputData) {

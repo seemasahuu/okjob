@@ -36,7 +36,7 @@ export default function PostJob() {
       jobExperienceEnd:inputData.jobExperienceEnd,  
       salaryStart:inputData.salaryStart,  
       salaryEnd:inputData.salaryEnd,    
-      createdAt:new Date()
+      createdAt:(new Date()).toISOString()
     };
     if(!inputData){
       alert("Please fill the form!")
