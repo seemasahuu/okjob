@@ -54,6 +54,7 @@ const Jobhome = () => {
                   const _job = job.data;
                   return (
                     <>
+                   
                       <div className="min-h-48   shadow-lg mb-3 my-5 mx-4 mr-0 rounded-md  flex  justify-center items-center" style={{width:"48%"}}>
                         <div className="h-28  flex">
                           <div className="h-14 w-11 mx-6 rounded-md flex items-center">
@@ -65,7 +66,7 @@ const Jobhome = () => {
                           </div>
                           <div>
                             <div>
-                              <Link to={`/apply/${job.id}`}>
+                              <Link to={`/job/${job.id}`}>
                                 <h1>{_job?.jobTitle}</h1>
                               </Link>
                             </div>
@@ -119,6 +120,7 @@ const Jobhome = () => {
                           </div>
                         </div>
                       </div>
+                 
                     </>
                   );
                 })}
