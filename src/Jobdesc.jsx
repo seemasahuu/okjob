@@ -53,7 +53,7 @@ function Jobdesc() {
               </div>
               <div>
                 <div>
-                  <Link to="/Form">
+                  <Link  to={"/apply/:id"}>
                     <h1 className="mr-72">{data.jobTitle}</h1>{" "}
                   </Link>
                 </div>

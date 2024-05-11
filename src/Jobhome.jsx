@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { RiBriefcaseLine } from "react-icons/ri";
 import { RiMapPin2Line } from "react-icons/ri";
 import { MdOutlineWatchLater } from "react-icons/md";
@@ -13,6 +13,7 @@ const Jobhome = () => {
   const [loading, setLoading] = useState(true);
   const [usersData, setUsersData] = useState([]);
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   /* function to get all tasks from firestore in realtime */
   useEffect(() => {
     const q = query(collection(database, "jobs"));
@@ -28,11 +29,15 @@ const Jobhome = () => {
     });
   }, []);
 
+  const handleapply = () => {
+    navigate("/job/create/new");
+  };
+
   return (
     <div>
-      <div className="h-44 py-14 ">
-        <h1 className="text-3xl font-mono" style={{ paddingLeft: "40%" }}>
-           OK Jobs
+      <div className="h-44 py-14 relative">
+        <h1 className="text-3xl font-mono" style={{ paddingLeft: "47%" }}>
+           OKJobs
         </h1>
         <p
           className="text-sm py-3 text-gray-500"
@@ -40,6 +45,14 @@ const Jobhome = () => {
         >
           Know your worth and find the job that qualify your life
         </p>
+        <Link to={"/job/create/new"}>
+          <button
+            className="bg-blue-800 text-white h-10 w-28 text-sm rounded-2xl my-1 mb-0 hover:bg-blue-700 absolute top-5 right-5"
+            onClick={handleapply}
+          >
+             Post job
+          </button>
+           </Link>
       </div>
       <div>
         {loading ? (
