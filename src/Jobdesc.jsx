@@ -112,7 +112,7 @@ function Jobdesc() {
 
         <div className="h-48 mx-24" style={{ width: "45%" }}>
           <button
-            className="bg-blue-800 text-white h-12 w-48 text-sm rounded-2xl my-20 mb-0 hover:bg-blue-700"
+            className="bg-black text-white h-12 w-48 text-sm rounded-2xl my-20 mb-0 hover:bg-gray-700"
             onClick={handleapply}
           >
             Apply for job

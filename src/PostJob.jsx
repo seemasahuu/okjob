@@ -67,7 +67,7 @@ export default function PostJob() {
   };
 
   return (
-    <div className="bg-sky-100 min-h-screen flex justify-center items-center ">
+    <div className="min-h-screen flex justify-center items-center ">
       <div
         className="bg-white rounded-md  shadow-md my-5 "
         style={{width: "80vh" }}
@@ -344,7 +344,7 @@ export default function PostJob() {
           <div className="flex items-center justify-between">
             <button
             onClick={createNewJob}
-              className="h-10 w-36 bg-blue-500 mx-44 hover:bg-blue-700 text-white font-bold py-2 px-4 my-6 rounded focus:outline-none focus:shadow-outline"
+              className="h-10 w-36 bg-black mx-44 hover:bg-gray-700 text-white font-bold py-2 px-4 my-6 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Save

@@ -31,10 +31,10 @@ const Succesapply = () => {
   return (
     <>
    
-    <div className="min-h-screen flex flex-col  items-center" style={{backgroundColor:"#e1ebf8"}}>
+    <div className="min-h-screen flex flex-col  items-center" >
  
-        <img className='h-64 w-80 rounded-lg my-6 ' src="https://cdn.dribbble.com/users/1238709/screenshots/4069900/media/5c33ad04385941a4968196a7445294eb.gif" alt="" />
-        <h1 className=' font-bold text-3xl text-center py-12  font-serif' >Your Application Has Been Successfully Received!</h1>
+        <img className='h-64 w-80 rounded-lg my-6 ' src="https://i.gifer.com/XD4x.gif" alt="" />
+        <h1 className=' font-bold text-3xl text-center py-10  font-serif' >Your Application Has Been Successfully Received!</h1>
         <div>
              
             <h1 className=' font-bold text-2xl px-44 ' >Thank you for applying for a position with <span className='text-blue-500'>{data?.companyName} </span>   We have successfully received your application.</h1>

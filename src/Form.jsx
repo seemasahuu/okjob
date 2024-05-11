@@ -80,7 +80,7 @@ const Form = () => {
       console.error("Error updating document: ", error);
     });
 
-    alert("We will redirect you in sooon....");
+    // alert("We will redirect you in sooon....");
   };
 
   const handlesubmit = () => {
@@ -89,7 +89,7 @@ const Form = () => {
   };
   return (
     <>
-      <div className="bg-sky-100 min-h-screen flex justify-center items-center ">
+      <div className="min-h-screen flex justify-center items-center ">
         <div
           className="bg-black rounded-md"
           style={{ height: "90vh", width: "55vh" }}
