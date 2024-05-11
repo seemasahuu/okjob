@@ -5,14 +5,23 @@ import { database } from "./firebase.config";
 export default function PostJob() {
   const [inputData, setinputData] = useState("");
 
-   const inputdatachange =(e)=>{
+  //  const inputdatachange =(e)=>{
+  //   const { name, value } = e.target;
+  //   // Update the state with the new value
+  //   setinputData({
+  //     ...inputData,
+  //     [name]: value,
+  // });
+  //  }
+
+  const inputdatachange = (e) => {
     const { name, value } = e.target;
-    // Update the state with the new value
+    // Update the state with the new value for the specific field
     setinputData({
       ...inputData,
       [name]: value,
-  });
-   }
+    });
+  };
   // Function to create a userx
   const createNewJob = async () => {
 
@@ -21,7 +30,7 @@ export default function PostJob() {
       companyName:inputData.companyName,
       companyLogo:inputData.companyLogo,
       jobLocation:inputData.jobLocation,
-      jobExperience:inputData.jobExperience,
+     
       jobSkills:inputData.jobSkills,
       jobResponsibilities:inputData.jobResponsibilities,
       jobDescription:inputData.jobDescription,
@@ -124,21 +133,7 @@ export default function PostJob() {
               onChange={inputdatachange}
             />
           </div>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              name="jobExperience"
-            >
-              Job Experience
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="text"
-              name="jobExperience"
-              placeholder="job Experience"
-              onChange={inputdatachange}
-            />
-          </div>
+          
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"

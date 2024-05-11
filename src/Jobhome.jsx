@@ -49,14 +49,14 @@ const Jobhome = () => {
             {data?.length === 0 ? (
               <div>No data found</div>
             ) : (
-              <div className="flex gap-2 h-fit w-fit flex-wrap">
+              <div className="flex flex-wrap gap-2 h-fit w-fit">
                 {data?.map((job, index) => {
                   const _job = job.data;
                   return (
                     <>
-                      <div className="h-48 shadow-lg mb-3 my-5 mx-8 rounded-md  flex  justify-center items-center">
+                      <div className="min-h-48  shadow-lg mb-3 my-5 mx-8 rounded-md  flex  justify-center items-center">
                         <div className="h-28 w-[100%] flex">
-                          <div className="h-14 w-14 mx-6 rounded-md flex items-center">
+                          <div className="h-14 w-11 mx-6 rounded-md flex items-center">
                             <img
                               className="w-full h-full object-contain"
                               src={_job.companyLogo}
@@ -75,7 +75,7 @@ const Jobhome = () => {
                                   <RiBriefcaseLine />
                                 </div>
 
-                                <h1>Catalyst</h1>
+                                <h1>{_job?.companyName}</h1>
                               </div>
 
                               <div className="flex items-center">
@@ -83,7 +83,7 @@ const Jobhome = () => {
                                   <RiMapPin2Line />
                                 </div>
 
-                                <h1>London, UK</h1>
+                                <h1>{_job?.jobLocation}</h1>
                               </div>
 
                               <div className="flex items-center">
@@ -101,7 +101,7 @@ const Jobhome = () => {
                                   <FaRegMoneyBillAlt />
                                 </div>
 
-                                <h1>$35k - $45k</h1>
+                                <h1>₹{_job?.salaryStart}lac - ₹{_job?.salaryEnd}lac</h1>
                               </div>
                             </div>
 
