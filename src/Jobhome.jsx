@@ -35,9 +35,9 @@ const Jobhome = () => {
 
   return (
     <div>
-      <div className="h-44 py-14 relative">
+      <div className="h-44 py-14 lg:relative">
         <h1 className="text-3xl font-mono text-center ">
-           OKJobs
+           OK<span className="text-blue-700">Jobs</span>
         </h1>
         <p
           className="text-sm py-3 text-gray-500 text-center"
@@ -47,7 +47,7 @@ const Jobhome = () => {
         </p>
         <Link to={"/job/create/new"}>
           <button
-            className="bg-black text-white h-10 w-28 text-sm rounded-2xl my-1 mb-0 hover:bg-gray-700 absolute top-5 right-6"
+            className="bg-black text-white h-10 w-28 text-sm rounded-2xl mx-40 my-2 mb-0 hover:bg-gray-700 lg:absolute top-5 right-6 "
             onClick={handleapply}
           >
              Post job
@@ -56,7 +56,7 @@ const Jobhome = () => {
       </div>
       <div>
         {loading ? (
-          <div>Loading...</div>
+          <div className="text-center">Loading...</div>
         ) : (
           <>
             {data?.length === 0 ? (
@@ -70,9 +70,9 @@ const Jobhome = () => {
                    
                       <div className="min-h-48   shadow-lg mb-3   rounded-md    flex  justify-center items-center w-full lg:w-[48%]  " >
                         <div className="h-28  flex">
-                          <div className="h-14 w-11 mx-6 rounded-lg flex items-center">
+                          <div className="h-7 w-7 mx-6 rounded-lg flex items-center lg:h-14 lg:w-11">
                             <img
-                              className="w-full h-full object-contain rounded-lg"
+                              className="  object-contain lg:w-full lg:h-full"
                               src={_job.companyLogo}
                               alt="logo"
                             />
@@ -83,13 +83,13 @@ const Jobhome = () => {
                                 <h1>{_job?.jobTitle}</h1>
                               </Link>
                             </div>
-                            <div className="h-14 w-full flex gap-8 mr-5 items-center flex-nowrap">
+                            <div className="h-14 w-full flex gap-2 items-center flex-nowrap lg:flex lg:gap-8 lg:mr-5 lg:h-14 lg:w-full">
                               <div className="flex items-center">
-                                <div className="h-9 w-6 flex items-center justify-center">
+                                <div className="h-4 w-4 flex items-center justify-center lg:h-9 lg:w-6">
                                   <RiBriefcaseLine />
                                 </div>
 
-                                <h1>{_job?.companyName}</h1>
+                                <h1 className="text-xs lg:text-md">{_job?.companyName}</h1>
                               </div>
 
                               <div className="flex items-center">
@@ -97,7 +97,7 @@ const Jobhome = () => {
                                   <RiMapPin2Line />
                                 </div>
 
-                                <h1>{_job?.jobLocation}</h1>
+                                <h1 className="text-xs lg:text-md">{_job?.jobLocation}</h1>
                               </div>
 
                               <div className="flex items-center">
@@ -105,7 +105,7 @@ const Jobhome = () => {
                                   <MdOutlineWatchLater />
                                 </div>
 
-                                <h1>
+                                <h1 className="text-xs hidden lg:text-md lg:block">
                                   {moment(_job.createdAt).add(3, 'days').calendar() }
                                 </h1>
                               </div>
@@ -115,7 +115,7 @@ const Jobhome = () => {
                                   <FaRegMoneyBillAlt />
                                 </div>
 
-                                <h1>₹{_job?.salaryStart}lac - ₹{_job?.salaryEnd}lac</h1>
+                                <h1 className="text-sm lg:text-md">₹{_job?.salaryStart}lac - ₹{_job?.salaryEnd}lac</h1>
                               </div>
                             </div>
 
