@@ -70,9 +70,9 @@ const Jobhome = () => {
                    
                       <div className="min-h-48   shadow-lg mb-3   rounded-md    flex  justify-center items-center w-full lg:w-[48%]  " >
                         <div className="h-28  flex">
-                          <div className="h-7 w-7 mx-6 rounded-lg flex items-center lg:h-14 lg:w-11">
+                          <div className="h-7 w-7 mx-6 rounded-lg  items-center hidden lg:h-14 lg:w-11 lg:block">
                             <img
-                              className="  object-contain lg:w-full lg:h-full"
+                              className="  object-contain lg:w-full lg:h-full flex"
                               src={_job.companyLogo}
                               alt="logo"
                             />
