@@ -40,7 +40,7 @@ function Jobdesc() {
   if(!data) return "Loading..."
   return (
     <div className="h-screen w-screen">
-      <div className="h-60 w-full bg-blue-50 flex gap-10">
+      <div className="h-60 w-full bg-gray-100 flex gap-10  shadow-sm">
         <div className="h-48  mx-24" style={{ width: "96%" }}>
           <div className="h-48 shadow-md mb-3 my-5 mx-8 rounded-md  flex justify-center items-center" style={{width:"96%"}}>
             <div className="h-28 flex " style={{ width: "85%" }}>
@@ -147,7 +147,7 @@ function Jobdesc() {
 
         </div>
         <div
-          className="h-full bg-blue-50  rounded-xl flex-wrap"
+          className="h-full bg-gray-100 rounded-xl flex-wrap  shadow-2xl"
           style={{ width: "25%" }}
         >
           <div className="h-20 w-full">
