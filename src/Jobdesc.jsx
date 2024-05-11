@@ -94,16 +94,16 @@ function Jobdesc() {
                   
                 </div>
 
-                <div className="h-10 w-72 flex items-center justify-center gap-3">
-                  <div className="h-7 w-20 bg-blue-200  rounded-xl">
-                    <h1 className="px-2.5 py-0.5">{data.jobChose}</h1>
-                  </div>
-                  <div className="h-7 w-20 bg-green-200 rounded-xl">
-                    <h1 className="px-4">urgent</h1>
-                  </div>
-                  <div className="h-7 w-20 bg-orange-200 rounded-xl">
-                    <h1 className="px-4">private</h1>
-                  </div>
+                <div className="h-10 w-72 flex gap-3">
+                <div className="h-7 w-full bg-blue-200 rounded-xl">
+                                <h1 className="text-center">Full Time</h1>
+                              </div>
+                              <div className="h-7 w-full bg-green-200 rounded-xl">
+                                <h1 className="text-center">Urgent</h1>
+                              </div>
+                              <div className="h-7 w-full bg-orange-200 rounded-xl">
+                                <h1 className="text-center">Private</h1>
+                              </div>
                 </div>
               </div>
             </div>
