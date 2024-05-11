@@ -32,7 +32,7 @@ const Jobhome = () => {
     <div>
       <div className="h-44 py-14 ">
         <h1 className="text-3xl font-mono" style={{ paddingLeft: "40%" }}>
-          Featured Jobs
+           OK Jobs
         </h1>
         <p
           className="text-sm py-3 text-gray-500"
@@ -49,13 +49,13 @@ const Jobhome = () => {
             {data?.length === 0 ? (
               <div>No data found</div>
             ) : (
-              <div className="flex flex-wrap gap-2 h-fit w-fit">
+              <div className="flex gap-2 flex-wrap">
                 {data?.map((job, index) => {
                   const _job = job.data;
                   return (
                     <>
-                      <div className="min-h-48  shadow-lg mb-3 my-5 mx-8 rounded-md  flex  justify-center items-center">
-                        <div className="h-28 w-[100%] flex">
+                      <div className="min-h-48   shadow-lg mb-3 my-5 mx-4 mr-0 rounded-md  flex  justify-center items-center" style={{width:"48%"}}>
+                        <div className="h-28  flex">
                           <div className="h-14 w-11 mx-6 rounded-md flex items-center">
                             <img
                               className="w-full h-full object-contain"
