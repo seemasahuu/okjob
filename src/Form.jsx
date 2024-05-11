@@ -9,7 +9,7 @@ import {
   update,
   remove,
 } from "firebase/database";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, doc, getDoc, updateDoc } from "firebase/firestore";
 import { database } from "./firebase.config";
 
 const Form = () => {
@@ -28,6 +28,23 @@ const Form = () => {
     });
   };
 
+  const [data, setData] = useState()
+
+  useEffect(() => {
+    const getJobDetails = async () => {
+      const snap = await getDoc(doc(database, "jobs", id));
+
+      if (snap.exists()) {
+        console.log(snap.data());
+        setData(snap.data())
+      } else {
+        console.log("No such document");
+      }
+    };
+
+    getJobDetails()
+  }, []);
+
   // Function to create a user
   const createUser = async () => {
     const myDocumentData = {
@@ -38,6 +55,7 @@ const Form = () => {
       jobId:id,
       createdAt:(new Date()).toISOString()
     };
+
 
     if (!inputData) {
       alert("Please fill the form!");
@@ -52,12 +70,22 @@ const Form = () => {
     // Log the document ID
     console.log("New document added with ID:", newDocRef.id);
 
+  // Update the existing document
+  const jobDocRef = doc(database, "jobs", id); // Ensure this is the correct path to your document
+  updateDoc(jobDocRef, { totalApplied:(data?.totalApplied||0) +1 })
+    .then(() => {
+      console.log("Document successfully updated");
+    })
+    .catch(error => {
+      console.error("Error updating document: ", error);
+    });
+
     alert("We will redirect you in sooon....");
   };
 
   const handlesubmit = () => {
     createUser();
- 
+    navigate(`/job/apply/${id}/success`);
   };
   return (
     <>

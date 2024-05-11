@@ -34,7 +34,7 @@ function Jobdesc() {
   }, []);
 
   const handleapply = () => {
-    navigate("/apply/:id");
+    navigate( `/apply/${id}`);
   };
 
   if(!data) return "Loading..."
@@ -42,18 +42,18 @@ function Jobdesc() {
     <div className="h-screen w-screen">
       <div className="h-60 w-full bg-blue-50 flex gap-10">
         <div className="h-48  mx-24" style={{ width: "96%" }}>
-          <div className="h-48 shadow-md mb-3 my-5 mx-8 rounded-md  flex justify-center items-center">
+          <div className="h-48 shadow-md mb-3 my-5 mx-8 rounded-md  flex justify-center items-center" style={{width:"96%"}}>
             <div className="h-28 flex " style={{ width: "85%" }}>
               <div className="h-14 w-14 mx-6  rounded-md flex items-center">
                 <img
-                  className="w-full h-full"
-                  src="https://superio-reactjs.ibthemespro.com/images/resource/company-logo/1-2.png"
+                  className="w-full h-full rounded-lg"
+                  src={data.companyLogo}
                   alt=""
                 />
               </div>
               <div>
                 <div>
-                  <Link  to={"/apply/:id"}>
+                  <Link  to={`/apply/${id}`}>
                     <h1 className="mr-72">{data.jobTitle}</h1>{" "}
                   </Link>
                 </div>
@@ -159,7 +159,7 @@ function Jobdesc() {
                 <RiBriefcaseLine style={{ height: "30px", width: "30px" }} />
               </div>
               <div>
-                <h1>date posted:</h1>
+                <h1>Date posted:</h1>
                 <h1>Posted 1 hours ago</h1>
               </div>
             </div>
@@ -188,7 +188,7 @@ function Jobdesc() {
               </div>
             </div>
 
-            <div className="h-24 w-full">
+            {/* <div className="h-24 w-full">
               <div className="flex gap-5 mx-14">
                 <div className="my-2">
                   <MdOutlineWatchLater
@@ -200,19 +200,9 @@ function Jobdesc() {
                   <h1>50h / week</h1>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="h-24 w-full">
-              <div className="flex gap-5 mx-14">
-                <div className="my-2">
-                  <FaCoins style={{ height: "30px", width: "30px" }} />
-                </div>
-                <div>
-                  <h1>Rate:</h1>
-                  <h1>₹{data.salaryStart}k - ₹{data.salaryEnd}k/ hour</h1>
-                </div>
-              </div>
-            </div>
+            
 
             <div className="h-24 w-full">
               <div className="flex gap-5 mx-14">
@@ -235,7 +225,7 @@ function Jobdesc() {
                   />
                 </div>
                 <div>
-                  <h1>notice Period:</h1>
+                  <h1>Notice Period:</h1>
                   <h1>{data.noticePeriod}</h1>
                 </div>
               </div>

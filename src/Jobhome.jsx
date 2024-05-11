@@ -41,7 +41,7 @@ const Jobhome = () => {
         </h1>
         <p
           className="text-sm py-3 text-gray-500"
-          style={{ paddingLeft: "37%" }}
+          style={{ paddingLeft: "40%" }}
         >
           Know your worth and find the job that qualify your life
         </p>
@@ -70,9 +70,9 @@ const Jobhome = () => {
                    
                       <div className="min-h-48   shadow-lg mb-3 my-5 mx-4 mr-0 rounded-md  flex  justify-center items-center" style={{width:"48%"}}>
                         <div className="h-28  flex">
-                          <div className="h-14 w-11 mx-6 rounded-md flex items-center">
+                          <div className="h-14 w-11 mx-6 rounded-lg flex items-center">
                             <img
-                              className="w-full h-full object-contain"
+                              className="w-full h-full object-contain rounded-lg"
                               src={_job.companyLogo}
                               alt="logo"
                             />
