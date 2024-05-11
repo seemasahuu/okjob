@@ -48,7 +48,7 @@ const Succesapply = () => {
                   type="button"
                   onClick={handlecontinue}
                 >
-                 Continue
+                Back To Home
                 </button>
               </div>
     </div>

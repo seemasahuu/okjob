@@ -40,8 +40,8 @@ const Jobhome = () => {
            OKJobs
         </h1>
         <p
-          className="text-sm py-3 text-gray-500"
-          style={{ paddingLeft: "40%" }}
+          className="text-sm py-3 text-gray-500 text-center"
+           
         >
           Know your worth and find the job that qualify your life
         </p>

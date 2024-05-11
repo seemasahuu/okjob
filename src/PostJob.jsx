@@ -26,25 +26,25 @@ export default function PostJob() {
   const createNewJob = async () => {
 
     const myDocumentData = {
-      jobTitle:inputData.jobTitle,
-      companyName:inputData.companyName,
-      companyLogo:inputData.companyLogo,
-      jobLocation:inputData.jobLocation,
+      jobTitle:inputData?.jobTitle||"",
+      companyName:inputData?.companyName||"",
+      companyLogo:inputData?.companyLogo||"",
+      jobLocation:inputData?.jobLocation||"",
      
-      jobSkills:inputData.jobSkills,
-      jobResponsibilities:inputData.jobResponsibilities,
-      jobDescription:inputData.jobDescription,
-      jobChose:inputData.jobChose,  
-      isCurrentolyHiring:inputData.isCurrentolyHiring,
-      companyEmail:inputData.companyEmail,
-      numberOfPosition:inputData.numberOfPosition,  
-      workMode:inputData.workMode,  
-      noticePeriod:inputData.noticePeriod,  
-      other:inputData.other,  
-      jobExperienceStart:inputData.jobExperienceStart,  
-      jobExperienceEnd:inputData.jobExperienceEnd,  
-      salaryStart:inputData.salaryStart,  
-      salaryEnd:inputData.salaryEnd,    
+      jobSkills:inputData?.jobSkills||"",
+      jobResponsibilities:inputData?.jobResponsibilities||"",
+      jobDescription:inputData?.jobDescription||"",
+      jobChose:inputData?.jobChose||"",  
+      isCurrentolyHiring:inputData?.isCurrentolyHiring||"",
+      companyEmail:inputData?.companyEmail||"",
+      numberOfPosition:inputData?.numberOfPosition||"",  
+      workMode:inputData?.workMode||"",  
+      noticePeriod:inputData?.noticePeriod||"",  
+      other:inputData?.other||"",  
+      jobExperienceStart:inputData?.jobExperienceStart||"",  
+      jobExperienceEnd:inputData?.jobExperienceEnd||"",  
+      salaryStart:inputData?.salaryStart||"",  
+      salaryEnd:inputData?.salaryEnd||"",    
       createdAt:(new Date()).toISOString()
     };
     if(!inputData){

@@ -48,10 +48,10 @@ const Form = () => {
   // Function to create a user
   const createUser = async () => {
     const myDocumentData = {
-      name: inputData.name,
-      email: inputData.email,
-      number: inputData.number,
-      jobtitle: inputData.jobTitle,
+      name: inputData?.name||"",
+      email: inputData?.email||"",
+      number: inputData?.number||"",
+      jobtitle: inputData?.jobTitle||"",
       jobId:id,
       createdAt:(new Date()).toISOString()
     };
