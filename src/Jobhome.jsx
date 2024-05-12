@@ -47,7 +47,7 @@ const Jobhome = () => {
         </p>
         <Link to={"/job/create/new"}>
           <button
-            className="bg-black text-white h-10 w-28 text-sm rounded-2xl mx-40 my-2 mb-0 hover:bg-gray-700 lg:absolute top-5 right-6 "
+            className="bg-black text-white h-10 w-28 text-sm rounded-2xl mx-36 my-2 mb-0 hover:bg-gray-700 lg:absolute top-5 right-6 "
             onClick={handleapply}
           >
              Post job
