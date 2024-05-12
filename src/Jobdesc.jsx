@@ -58,7 +58,7 @@ function Jobdesc() {
                   <h1>{data.jobTitle}</h1>{" "}
                 </Link>
               </div>
-              <div className="h-14 flex gap items-center flex-nowrap lg:flex lg:gap-2   lg:h-14 lg:w-full">
+              <div className="h-14 flex gap-2 items-center flex-nowrap lg:flex lg:gap-2   lg:h-14 lg:w-full">
                 <div className="flex items-center">
                   <div className="h-4 w-4 flex items-center justify-center   lg:h-9 lg:w-6">
                     <RiBriefcaseLine />
@@ -113,7 +113,7 @@ function Jobdesc() {
 
         <div className="h-48 mx-24 lg:w-[45%]">
           <button
-            className="bg-black text-white h-12 w-48 text-sm rounded-2xl my-9 lg:my-20 mb-0 hover:bg-gray-700"
+            className="bg-black text-white h-12 w-40 mx-3 text-sm rounded-2xl my-9 lg:my-20 mb-0 lg:w-48  hover:bg-gray-700"
             onClick={handleapply}
           >
             Apply for job
