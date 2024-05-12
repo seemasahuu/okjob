@@ -327,7 +327,7 @@ export default function PostJob() {
           </div>
           </div>
 
-          <div className="flex gap-9 lg:gap-16 items-center">
+          <div className="flex gap-7 lg:gap-16 items-center">
             <select className="shadow appearance-none   bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="jobChose"   onChange={inputdatachange}>
               <option className="text-gray-100">Job Type </option>
               <option>Full time</option>
