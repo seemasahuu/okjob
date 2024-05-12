@@ -69,8 +69,8 @@ export default function PostJob() {
   return (
     <div className="min-h-screen flex justify-center items-center ">
       <div
-        className="bg-white rounded-md  shadow-md my-5 "
-        style={{width: "80vh" }}
+        className="bg-white rounded-md  w-[45vh] shadow-md my-5 lg:w-[80vh] "
+      
       >
         <form className="bg-white rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
@@ -259,7 +259,7 @@ export default function PostJob() {
             />
           </div>
 
-          <div className="md:flex gap-3 md:items-center">
+          <div className="flex gap-6 lg:gap-32 items-center">
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -293,7 +293,7 @@ export default function PostJob() {
           </div>
           </div>
 
-          <div className="md:flex gap-3 md:items-center">
+          <div className="flex gap-6 lg:gap-32 items-center">
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -327,7 +327,7 @@ export default function PostJob() {
           </div>
           </div>
 
-          <div className="md:flex md:items-center">
+          <div className="flex gap-6 lg:gap-16 items-center">
             <select className="shadow appearance-none   bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="jobChose"   onChange={inputdatachange}>
               <option className="text-gray-100">Job Type </option>
               <option>Full time</option>
@@ -341,10 +341,10 @@ export default function PostJob() {
             </label>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <button
             onClick={createNewJob}
-              className="h-10 w-36 bg-black mx-44 hover:bg-gray-700 text-white font-bold py-2 px-4 my-6 rounded focus:outline-none focus:shadow-outline"
+              className="h-10 w-36 bg-black  hover:bg-gray-700 text-white font-bold py-2 px-4 my-6 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Save
