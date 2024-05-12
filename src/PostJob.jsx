@@ -84,7 +84,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobTitle"
-              placeholder="job Title"
+              placeholder="Job Title"
               onChange={inputdatachange}
             />
           </div>
@@ -99,7 +99,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="companyName"
-              placeholder="company Name"
+              placeholder="Company Name"
               onChange={inputdatachange}
             />
           </div>
@@ -114,7 +114,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="companyLogo"
-              placeholder="company Logo"
+              placeholder="Company Logo"
               onChange={inputdatachange}
             />
           </div>
@@ -129,7 +129,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobLocation"
-              placeholder="job Location"
+              placeholder="Job Location"
               onChange={inputdatachange}
             />
           </div>
@@ -145,7 +145,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobSkills"
-              placeholder="job Skills"
+              placeholder="Job Skills"
               onChange={inputdatachange}
             />
           </div>
@@ -160,7 +160,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobResponsibilities"
-              placeholder="job Responsibilities"
+              placeholder="Job Responsibilities"
               onChange={inputdatachange}
             />
           </div>
@@ -175,7 +175,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="textarea"
               name="jobDescription"
-              placeholder="job Description"
+              placeholder="Job Description"
               onChange={inputdatachange}
             />
           </div>
@@ -190,7 +190,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="companyEmail"
-              placeholder="company Email"
+              placeholder="Company Email"
               onChange={inputdatachange}
             />
           </div>
@@ -206,7 +206,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="numberOfPosition"
-              placeholder="number Of Position"
+              placeholder="Number Of Position"
               onChange={inputdatachange}
             />
           </div>
@@ -222,7 +222,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="workMode"
-              placeholder="work Mode"
+              placeholder="Work Mode"
               onChange={inputdatachange}
             />
           </div>
@@ -238,7 +238,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="number"
               name="noticePeriod"
-              placeholder="notice Period"
+              placeholder="Notice Period"
               onChange={inputdatachange}
             />
           </div>
@@ -254,7 +254,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="other"
-              placeholder="other"
+              placeholder="Other"
               onChange={inputdatachange}
             />
           </div>
@@ -271,7 +271,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobExperienceStart"
-              placeholder="job Experience Start"
+              placeholder="Job Experience Start"
               onChange={inputdatachange}
             />
           </div>
@@ -287,7 +287,7 @@ export default function PostJob() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="jobExperienceEnd"
-              placeholder="job Experience End"
+              placeholder="Job Experience End"
               onChange={inputdatachange}
             />
           </div>
@@ -299,13 +299,13 @@ export default function PostJob() {
               className="block text-gray-700 text-sm font-bold mb-2"
               name="salaryStart"
             >
-               salary Start
+               Salary Start
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="salaryStart"
-              placeholder="salary Start"
+              placeholder="Salary Start"
               onChange={inputdatachange}
             />
           </div>
@@ -315,19 +315,19 @@ export default function PostJob() {
               className="block text-gray-700 text-sm font-bold mb-2"
               name="salaryEnd"
             >
-               salary End
+               Salary End
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="salaryEnd"
-              placeholder="salary End"
+              placeholder="Salary End"
               onChange={inputdatachange}
             />
           </div>
           </div>
 
-          <div className="flex gap-6 lg:gap-16 items-center">
+          <div className="flex gap-9 lg:gap-16 items-center">
             <select className="shadow appearance-none   bg-gray-200 border border-gray-200 text-gray-700 py-2 px-4 pr-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="jobChose"   onChange={inputdatachange}>
               <option className="text-gray-100">Job Type </option>
               <option>Full time</option>
@@ -337,7 +337,7 @@ export default function PostJob() {
             <div className="md:w-1/3"></div>
             <label className="md:w-2/3 block text-gray-700 font-bold">
               <input className="mr-2 leading-tight" type="checkbox" name="isCurrentolyHiring"  onChange={inputdatachange}/>
-              <span className="text-sm">is Currentoly Hiring</span>
+              <span className="text-sm">Is Currentoly Hiring</span>
             </label>
           </div>
 
