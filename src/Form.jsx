@@ -89,9 +89,9 @@ const Form = () => {
   };
   return (
     <>
-      <div className="min-h-screen flex justify-center   relative ">
+      <div className="min-h-screen flex justify-center relative ">
         <div
-          className="bg-black rounded-md  lg:h-[90vh] lg:w-[55vh] absolute top-28  lg:top-10"
+          className="bg-black rounded-md  lg:h-[90vh] lg:w-[55vh] absolute top-24  lg:top-10"
          
         >
           <div
