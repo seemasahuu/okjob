@@ -91,15 +91,14 @@ const Form = () => {
     <>
       <div className="min-h-screen flex justify-center items-center ">
         <div
-          className="bg-black rounded-md lg:h-[90vh] lg:w-[55vh]"
+          className="bg-black rounded-md  lg:h-[90vh] lg:w-[55vh]"
          
         >
           <div
-            className="bg-white my-16 shadow-xl"
+            className="bg-white lg:my-16 shadow-xl h-[71vh]"
             style={{
               borderTopLeftRadius: "140px",
               borderBottomRightRadius: "140px",
-              height: "71vh",
             }}
           >
             <form
