@@ -120,8 +120,8 @@ function Jobdesc() {
           </button>
         </div>
       </div>
-      <div className="h-full w-full   flex-wrap gap-10 my-10 lg:flex  ">
-        <div className="h-full w-full lg:w-[65%]" >
+      <div className="h-full w-full flex-wrap gap-10 my-10 lg:flex  ">
+        <div className="h-full w-full my-0 mb-6 lg:w-[65%]" >
           <h1 className="font-bold text-xl px-10 py-2 lg:px-24">Job Description</h1>
           <h1 className="px-10 pr-5 lg:px-24">{data.jobDescription}</h1>
 

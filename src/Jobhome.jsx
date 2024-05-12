@@ -121,13 +121,13 @@ const Jobhome = () => {
 
                             <div className="h-10 w-72 flex gap-3">
                               <div className="h-7 w-full bg-blue-200 rounded-xl">
-                                <h1 className="text-center">Full Time</h1>
+                                <h1 className="text-sm text-center py-1 lg:text-md">Full Time</h1>
                               </div>
                               <div className="h-7 w-full bg-green-200 rounded-xl">
-                                <h1 className="text-center">Urgent</h1>
+                                <h1 className="text-sm text-center py-1 lg:text-md">Urgent</h1>
                               </div>
                               <div className="h-7 w-full bg-orange-200 rounded-xl">
-                                <h1 className="text-center">Private</h1>
+                                <h1 className="text-sm text-center py-1 lg:text-md">Private</h1>
                               </div>
                             </div>
                           </div>
